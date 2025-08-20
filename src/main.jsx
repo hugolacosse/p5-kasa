@@ -2,12 +2,13 @@ import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import './index.css';
 import { BrowserRouter, Routes, Route } from 'react-router';
-import Home from './pages/Home.jsx';
-import Logement from './pages/Logement.jsx';
-import About from './pages/About.jsx';
-import Error404 from './pages/error404.jsx';
-import Header from './components/Header.jsx';
-import Footer from './components/Footer.jsx';
+
+import Home from './pages/Home/Home.jsx';
+import Logement from './pages/Logement/Logement.jsx';
+import About from './pages/About/About.jsx';
+import Error from './pages/Error/Error.jsx';
+import Header from './components/Header/Header.jsx';
+import Footer from './components/Footer/Footer.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -17,7 +18,7 @@ createRoot(document.getElementById('root')).render(
         <Route index element={<Home />} />
         <Route path="/logement/:id" element={<Logement />} />
         <Route path="/about" element={<About />} />
-        <Route path="*" element={<Error404 />} />
+        <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
     </BrowserRouter>
