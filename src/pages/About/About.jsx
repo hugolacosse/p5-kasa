@@ -1,12 +1,16 @@
+import imgUrl from '../../assets/img/AboutHero.svg';
+import aboutData from '../../assets/data/about.json';
+import Dropdown from '../../components/Dropdown/Dropdown';
+
 function About() {
+  const content = aboutData.map((item) => (
+    <Dropdown title={item.title} content={item.content} />
+  ));
   return (
-    <>
-      <h1>Hero</h1>
-      <p>Composant-dropdown 1</p>
-      <p>Composant-dropdown 2</p>
-      <p>Composant-dropdown 3</p>
-      <p>Composant-dropdown 4</p>
-    </>
+    <main>
+      <img src={imgUrl} alt="Photo of snow-capped mountains." />
+      {content}
+    </main>
   );
 }
 
