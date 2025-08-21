@@ -4,7 +4,7 @@ import './header.module.css';
 function Header() {
   return (
     <header>
-      <h1>Kasa</h1>
+      <p>Kasa</p>
       <nav>
         <ul>
           <li>

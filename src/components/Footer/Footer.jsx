@@ -14,7 +14,7 @@ vertical-align: bottom;
 function Footer() {
   return (
     <footer>
-      <h1>Kasa</h1>
+      <p>Kasa</p>
       <p>© 2020 Kasa. All rights reserved</p>
     </footer>
   );
