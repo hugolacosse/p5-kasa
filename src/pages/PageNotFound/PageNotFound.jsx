@@ -1,7 +1,7 @@
 import { Link } from 'react-router';
-import './error.module.css';
+import './pagenotfound.module.css';
 
-function Error() {
+function PageNotFound() {
   return (
     <main>
       <h1>404</h1>
@@ -11,4 +11,4 @@ function Error() {
   );
 }
 
-export default Error;
+export default PageNotFound;
