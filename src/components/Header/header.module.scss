@@ -1,0 +1,53 @@
+.header {
+  width: 100%;
+  max-width: 1240px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: solid 2px green;
+
+  @media screen and (max-width: 768px) {
+    width: 335px;
+  }
+}
+
+.logo {
+  @media screen and (max-width: 768px) {
+    height: auto;
+    width: 145px;
+  }
+}
+
+.navbar {
+  &__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    gap: 57px;
+    white-space: nowrap;
+
+    @media screen and (max-width: 768px) {
+      gap: 26px;
+    }
+  }
+
+  & a {
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 500;
+
+    @media screen and (max-width: 768px) {
+      font-size: 0.75em;
+    }
+  }
+
+  & .currentPage {
+    text-decoration: underline;
+  }
+
+  & a:visited {
+    color: #000000;
+  }
+}

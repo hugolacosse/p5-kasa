@@ -9,6 +9,7 @@ import About from './pages/About/About.jsx';
 import PageNotFound from './pages/PageNotFound/PageNotFound.jsx';
 import Header from './components/Header/Header.jsx';
 import Footer from './components/Footer/Footer.jsx';
+import './global.scss';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
