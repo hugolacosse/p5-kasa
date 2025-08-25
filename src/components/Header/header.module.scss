@@ -1,13 +1,13 @@
 .header {
   width: 100%;
   max-width: 1240px;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: solid 2px green;
 
   @media screen and (max-width: 768px) {
-    width: 335px;
+    padding: 20px 20px 0px 20px;
   }
 }
 
