@@ -1,7 +1,7 @@
 function Home() {
   return (
     <>
-      <h1>Hero</h1>
+      <h5>Hero</h5>
       <p>Composant-location 1</p>
       <p>Composant-location 2</p>
       <p>Composant-location 3</p>

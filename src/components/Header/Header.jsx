@@ -7,11 +7,7 @@ function Header() {
 
   return (
     <header className={styles.header}>
-      <img
-        className={styles.logo}
-        src={logoUrl}
-        alt="Photo of snow-capped mountains."
-      />
+      <img className={styles.logo} src={logoUrl} alt="Logo de Kasa" />
       <nav className={styles.navbar}>
         <ul className={styles.navbar__list}>
           <li>
