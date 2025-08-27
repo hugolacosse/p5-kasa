@@ -18,6 +18,31 @@ function Header() {
               to="/"
               className={location.pathname === '/' ? styles.currentPage : ''}
             >
+              Accueil
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/about"
+              className={
+                location.pathname === '/about' ? styles.currentPage : ''
+              }
+            >
+              A propos
+            </Link>
+          </li>
+        </ul>
+      </nav>
+      <nav className={`${styles.navbar} ${styles.mobile}`}>
+        <ul className={styles.navbar__list}>
+          <li>
+            <Link to="/404">r</Link>
+          </li>
+          <li>
+            <Link
+              to="/"
+              className={location.pathname === '/' ? styles.currentPage : ''}
+            >
               ACCUEIL
             </Link>
           </li>

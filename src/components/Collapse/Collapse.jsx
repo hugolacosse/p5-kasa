@@ -24,7 +24,7 @@ function Collapse({ title, content }) {
       <div
         className={`${classes.collapse__content} ${isOpen ? classes.showContent : classes.hideContent}`}
       >
-        {content}
+        <p>{content}</p>
       </div>
     </article>
   );

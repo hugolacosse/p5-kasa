@@ -5,10 +5,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 45px 45px 0px 45px;
+  padding: 45px 45px 45px 45px;
 
   @media screen and (max-width: 768px) {
-    padding: 20px 20px 0px 20px;
+    padding: 20px 20px 20px 20px;
   }
 }
 
@@ -20,6 +20,10 @@
 }
 
 .navbar {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+
   &__list {
     display: flex;
     flex-direction: row;
@@ -36,11 +40,11 @@
 
   & a {
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 1.25em;
     font-weight: 500;
 
     @media screen and (max-width: 768px) {
-      font-size: 0.75em;
+      font-size: 0.875em;
     }
   }
 
@@ -50,5 +54,17 @@
 
   & a:visited {
     color: #000000;
+  }
+
+  & a:hover {
+    text-decoration: underline;
+  }
+}
+
+.mobile {
+  display: none;
+
+  @media screen and (max-width: 768px) {
+    display: flex;
   }
 }
