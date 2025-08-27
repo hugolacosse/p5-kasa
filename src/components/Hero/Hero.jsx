@@ -1,7 +1,7 @@
 import {} from 'react-router';
 import styles from './hero.module.scss';
 
-function Hero({ title, imgUrl, alt, opacity, children }) {
+function Hero({ imgUrl, alt, opacity, children }) {
   return (
     <section className={styles.hero}>
       <img className={styles.hero__image} src={imgUrl} alt={alt} />
