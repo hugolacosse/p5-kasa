@@ -51,6 +51,7 @@
     color: #ffffff;
     font-weight: 700;
     font-size: 3em;
+
     @media screen and (max-width: 768px) {
       flex-direction: column;
       font-size: 1.5em;
@@ -62,5 +63,3 @@
     }
   }
 }
-
-// home = opacity 60
