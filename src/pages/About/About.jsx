@@ -1,21 +1,22 @@
+import classes from './about.module.scss';
 import imgUrl from '../../assets/img/HERO-about.png';
 import aboutData from '../../assets/data/about.json';
-import Dropdown from '../../components/Dropdown/Dropdown';
+import Collapse from '../../components/Collapse/Collapse.jsx';
 import Hero from '../../components/Hero/Hero';
 
 function About() {
   const content = aboutData.map((item) => (
-    <Dropdown title={item.title} content={item.content} />
+    <Collapse key={item.title} title={item.title} content={item.content} />
   ));
+
   return (
-    <main>
+    <main className={classes.about}>
       <Hero
-        title="Toto"
         imgUrl={imgUrl}
         alt="Photo of snow-capped mountains."
         opacity={'30%'}
       />
-      {content}
+      <section className={classes.content}>{content}</section>
     </main>
   );
 }
