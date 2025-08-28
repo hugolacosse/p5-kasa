@@ -1,16 +1,15 @@
 .tag {
-  width: 115px;
   display: flex;
   justify-content: center;
   align-items: center;
+  white-space: nowrap;
   background-color: #ff6060;
   color: white;
   border-radius: 10px;
   font-weight: 500;
   font-size: 0.875em;
-  padding: 3px 0px;
+  padding: 3px 10px;
 
   @media screen and (max-width: 768px) {
-    width: 84px;
   }
 }
