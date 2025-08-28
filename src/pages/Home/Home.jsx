@@ -29,7 +29,12 @@ function Home() {
       </Hero>
       <section className={styles.container}>
         {items.map((item) => (
-          <Card key={item.id} title={item.title} imgUrl={item.cover} />
+          <Card
+            key={item.id}
+            id={item.id}
+            title={item.title}
+            imgUrl={item.cover}
+          />
         ))}
       </section>
     </main>
