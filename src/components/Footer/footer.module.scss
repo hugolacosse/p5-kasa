@@ -8,18 +8,15 @@
   justify-content: center;
   align-items: center;
   gap: 30px;
-  padding: 67px 0px 30px 0px;
+  padding: 45px 0px 30px 0px;
   font-size: 1.5em;
   font-weight: 500;
   color: white;
 
-  &__logo {
-  }
-
   @media screen and (max-width: 768px) {
     font-size: 0.75em;
     gap: 15px;
-    padding: 67px 0px 60px 0px;
+    padding: 45px 0px 45px 0px;
   }
 
   & p {
@@ -29,12 +26,3 @@
     }
   }
 }
-
-/*
-
-leading-trim: NONE;
-line-height: 143%;
-letter-spacing: 0%;
-text-align: center;
-vertical-align: bottom;
-*/
