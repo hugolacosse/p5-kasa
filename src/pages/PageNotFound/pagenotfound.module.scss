@@ -1,5 +1,7 @@
+@use '../../index.scss' as i;
+
 .pagenotfound {
-  color: #ff6060;
+  color: i.$primary-color;
   justify-content: center;
   padding-bottom: 45px;
   gap: 45px;

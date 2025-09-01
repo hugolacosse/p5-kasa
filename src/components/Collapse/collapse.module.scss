@@ -1,3 +1,5 @@
+@use '../../index.scss' as i;
+
 .collapse {
   margin-bottom: 30px;
   width: 100%;
@@ -14,7 +16,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: #ff6060;
+    background-color: i.$primary-color;
     color: #ffffff;
     padding: 10px 20px 10px 15px;
     border-radius: 5px;

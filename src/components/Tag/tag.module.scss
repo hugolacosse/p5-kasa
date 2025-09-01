@@ -1,9 +1,11 @@
+@use '../../index.scss' as i;
+
 .tag {
   display: flex;
   justify-content: center;
   align-items: center;
   white-space: nowrap;
-  background-color: #ff6060;
+  background-color: i.$primary-color;
   color: white;
   border-radius: 10px;
   font-weight: 700;
