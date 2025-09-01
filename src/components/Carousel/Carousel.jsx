@@ -42,6 +42,9 @@ function Carousel({ pictures }) {
         src={rightArrow}
         alt="Control arrow right"
       />
+      <span
+        className={styles.carousel__numbering}
+      >{`${index + 1}/${pictures.length}`}</span>
     </section>
   );
 }

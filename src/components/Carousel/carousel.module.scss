@@ -44,4 +44,18 @@
   &__rightArrow {
     right: 20px;
   }
+
+  &__numbering {
+    color: #fff;
+    font-size: 1.125em;
+    font-weight: 500;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @media screen and (max-width: 768px) {
+      visibility: hidden;
+    }
+  }
 }
