@@ -7,7 +7,6 @@ function Collapse({ title, content }) {
 
   function handleClick() {
     setIsOpen(!isOpen);
-    console.log('clicked');
   }
 
   return (
@@ -22,9 +21,11 @@ function Collapse({ title, content }) {
         />
       </div>
       <div
-        className={`${classes.collapse__content} ${isOpen ? classes.showContent : classes.hideContent}`}
+        className={`${classes.collapse__content} ${isOpen ? classes.collapse__contentvisible : ''}`}
       >
-        <p>{content}</p>
+        {content.map((item, index) => (
+          <p key={index}>{item}</p>
+        ))}
       </div>
     </article>
   );

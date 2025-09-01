@@ -6,7 +6,7 @@ import Hero from '../../components/Hero/Hero';
 
 function About() {
   const content = aboutData.map((item) => (
-    <Collapse key={item.title} title={item.title} content={item.content} />
+    <Collapse key={item.title} title={item.title} content={[item.content]} />
   ));
 
   return (

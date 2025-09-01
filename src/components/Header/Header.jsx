@@ -11,9 +11,6 @@ function Header() {
       <nav className={styles.navbar}>
         <ul className={styles.navbar__list}>
           <li>
-            <Link to="/404">r</Link>
-          </li>
-          <li>
             <Link
               to="/"
               className={location.pathname === '/' ? styles.currentPage : ''}
@@ -35,9 +32,6 @@ function Header() {
       </nav>
       <nav className={`${styles.navbar} ${styles.mobile}`}>
         <ul className={styles.navbar__list}>
-          <li>
-            <Link to="/404">r</Link>
-          </li>
           <li>
             <Link
               to="/"

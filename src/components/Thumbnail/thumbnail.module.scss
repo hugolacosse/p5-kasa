@@ -1,4 +1,4 @@
-.card {
+.thumbnail {
   display: flex;
   width: calc(33% - 18px);
   height: 255px;
@@ -6,17 +6,18 @@
   @media screen and (max-width: 768px) {
     width: 100%;
   }
+
   &__link {
     position: relative;
-    display: flex;
     width: 100%;
+    display: flex;
     border-radius: 10px;
   }
 
   &__image {
     width: 100%;
     object-fit: cover;
-    border-radius: 5px;
+    border-radius: 10px;
   }
 
   &__title {

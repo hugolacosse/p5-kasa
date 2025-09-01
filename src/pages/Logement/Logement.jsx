@@ -48,8 +48,8 @@ function Logement() {
             </div>
           </section>
           <section className={styles.collapses}>
-            <Collapse title={'Description'} content="todo" />
-            <Collapse title={'Équipements'} content="todo" />
+            <Collapse title={'Description'} content={[item.description]} />
+            <Collapse title={'Équipements'} content={item.equipments} />
           </section>
         </>
       ) : (
