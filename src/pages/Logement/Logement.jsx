@@ -1,4 +1,4 @@
-import { useParams } from 'react-router';
+import { useNavigate, useParams } from 'react-router';
 import { useEffect, useState } from 'react';
 
 import Carousel from '../../components/Carousel/Carousel.jsx';
@@ -11,15 +11,21 @@ import fetchItems from '../../api/fetchItems.js';
 function Logement() {
   const [item, setItem] = useState(null);
   const { id } = useParams();
+  let navigate = useNavigate();
 
   useEffect(() => {
     const data = fetchItems();
     data.then((listItems) => {
+      let tmp = null;
       listItems.map((item) => {
         if (item.id == id) {
+          tmp = item;
           setItem(item);
         }
       });
+      if (tmp == null) {
+        navigate(`/${id}`);
+      }
     });
   }, []);
 
