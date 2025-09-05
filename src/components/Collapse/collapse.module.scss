@@ -32,6 +32,10 @@
         font-size: 0.875em;
       }
     }
+
+    & img:hover {
+      cursor: pointer;
+    }
   }
 
   &__content {
